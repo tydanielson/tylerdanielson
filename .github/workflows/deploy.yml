@@ -48,11 +48,11 @@ jobs:
         terraform_version: ${{ env.TERRAFORM_VERSION }}
         terraform_wrapper: false
 
-    # Configure AWS credentials using OIDC
+    # Configure AWS credentials using OIDC (use bootstrap role initially)
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4
       with:
-        role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+        role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/GitHubActions-Bootstrap-tydanielson.github.io
         aws-region: ${{ env.AWS_REGION }}
         role-session-name: GitHubActions-Terraform
 
