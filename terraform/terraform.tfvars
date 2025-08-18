@@ -1,5 +1,5 @@
 # Production configuration for Tyler Danielson's portfolio
-domain_name            = "tydanielson.com"
+domain_name            = "tylerdanielson.com"
 subdomain              = ""
 aws_region             = "us-east-1"
 environment            = "production"
