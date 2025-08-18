@@ -52,7 +52,7 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4
       with:
-        role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/GitHubActions-Bootstrap-tydanielson.github.io
+        role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/GitHubActions-Bootstrap-tylerdanielson
         aws-region: ${{ env.AWS_REGION }}
         role-session-name: GitHubActions-Terraform
 

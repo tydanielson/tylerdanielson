@@ -21,7 +21,7 @@ variable "github_org" {
 variable "github_repo_name" {
   description = "GitHub repository name"
   type        = string
-  default     = "tydanielson.github.io"
+  default     = "tylerdanielson"
 }
 
 # OIDC Provider for GitHub Actions
