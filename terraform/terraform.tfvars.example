@@ -1,0 +1,25 @@
+# Example terraform.tfvars file
+# Copy this to terraform.tfvars and update with your values
+
+# Required: Your domain name
+domain_name = "yourdomain.com"
+
+# Optional: Subdomain (leave empty for root domain)
+# subdomain = "www"
+subdomain = ""
+
+# Optional: AWS region (default: us-east-1)
+aws_region = "us-east-1"
+
+# Optional: Environment name (default: production)
+environment = "production"
+
+# Optional: Terraform state bucket name (default: tydanielson-terraform-state)
+terraform_state_bucket = "your-terraform-state-bucket"
+
+# Optional: Website bucket prefix (default: tydanielson-portfolio)
+website_bucket_prefix = "your-portfolio"
+
+# Optional: CloudFront price class (default: PriceClass_100)
+# Options: PriceClass_All, PriceClass_200, PriceClass_100
+price_class = "PriceClass_100"

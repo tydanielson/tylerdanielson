@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Container, Typography, Box, Tab, Tabs, Paper, Link, Chip, Button } from '@mui/material';
-import { Email, LinkedIn, GitHub, Work, School, Code, Download, Build, Psychology, Speed, Hiking, MenuBook } from '@mui/icons-material';
+import { Email, LinkedIn, GitHub, Work, School, Code, Download, Build, Psychology, Speed, Person } from '@mui/icons-material';
 
 const theme = createTheme({
   palette: {
@@ -142,7 +142,7 @@ function App() {
             <Tab label="Education" icon={<School />} />
             <Tab label="Skills" icon={<Build />} />
             <Tab label="Projects" icon={<Code />} />
-            <Tab label="Personal" icon={<Hiking />} />
+            <Tab label="Leadership" icon={<Person />} />
           </Tabs>
         </Paper>
 
@@ -701,75 +701,87 @@ function App() {
 
           <TabPanel value={value} index={4}>
             <Typography variant="h4" gutterBottom color="primary">
-              Personal Journey & Values
+              Leadership Philosophy
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
               
-              <Box sx={{ p: 3, bgcolor: 'grey.50', borderRadius: 2 }}>
-                <Typography variant="h6" color="primary" gutterBottom>
-                  <Hiking sx={{ mr: 1, verticalAlign: 'middle' }} />
-                  Adventure & Resilience
+              <Box sx={{ p: 4, borderRadius: 3, border: '1px solid #e2e8f0', backgroundColor: 'white' }}>
+                <Typography variant="h6" color="primary" gutterBottom sx={{ fontWeight: 600 }}>
+                  Strategic Vision & Execution Excellence
                 </Typography>
                 <Typography variant="body1" sx={{ mb: 2 }}>
-                  <strong>Mountain Climbing:</strong> I've climbed a bunch of 14ers in Colorado and made it up Mount Kilimanjaro in 2019. 
-                  These climbs taught me that preparation is everything, but you also need to know when to push through and when it's time to turn around.
+                  Transformational leadership requires the ability to operate simultaneously at 30,000 feet and ground level. 
+                  My methodology centers on rigorous scenario planning, data-driven decision architecture, and strategic patience 
+                  balanced with tactical agility. I architect frameworks that enable teams to innovate within clear parameters 
+                  while maintaining unwavering focus on measurable outcomes.
                 </Typography>
-                <Typography variant="body1" sx={{ mb: 2 }}>
-                  <strong>Endurance Sports:</strong> I've done seven ski marathons, tons of bike races, and once rode 241 miles across Minnesota in 19 hours straight. 
-                  Honestly, these crazy challenges help me figure out what I'm really capable of and build that mental toughness you need for everything else.
-                </Typography>
-                <Typography variant="body1">
-                  <strong>Travel:</strong> I've been to 30+ countries across 6 continents, sometimes for trips over 90 days. 
-                  Traveling like this really opens your eyes - you learn to listen first and understand where people are coming from.
+                <Typography variant="body1" sx={{ mb: 1, fontStyle: 'italic', color: 'text.secondary' }}>
+                  "The best strategies emerge from the intersection of deep market understanding, technological possibility, and human psychology."
                 </Typography>
               </Box>
 
-              <Box sx={{ p: 3, bgcolor: 'primary.light', color: 'primary.contrastText', borderRadius: 2 }}>
-                <Typography variant="h6" sx={{ color: 'white' }} gutterBottom>
-                  <MenuBook sx={{ mr: 1, verticalAlign: 'middle' }} />
-                  Continuous Learning & Growth
+              <Box sx={{ p: 4, borderRadius: 3, background: 'linear-gradient(135deg, #1e40af 0%, #93c5fd 100%)', color: 'white' }}>
+                <Typography variant="h6" sx={{ color: 'white', fontWeight: 600, mb: 2 }}>
+                  Intellectual Capital & Adaptive Intelligence
                 </Typography>
-                <Typography variant="body1" sx={{ mb: 2, color: 'white' }}>
-                  <strong>Always Learning:</strong> I read about 20 non-fiction books a year, mostly psychology stuff 
-                  because I'm fascinated by what makes people tick. It definitely makes me a better leader and teammate.
+                <Typography variant="body1" sx={{ mb: 2, color: 'rgba(255,255,255,0.95)' }}>
+                  In an era where technological half-lives are measured in months, not years, executive success demands 
+                  intellectual humility coupled with aggressive learning velocity. I maintain competitive advantage through 
+                  systematic knowledge acquisition across disciplines—from behavioral economics to emerging AI paradigms—
+                  synthesizing insights from diverse global markets and cross-cultural business environments.
                 </Typography>
-                <Typography variant="body1" sx={{ color: 'white' }}>
-                  <strong>Creative Side:</strong> I play guitar, draw, and love building things with my hands. 
-                  I think staying creative is super important - it keeps you flexible when things change and helps you think differently about problems.
+                <Typography variant="body1" sx={{ mb: 2, color: 'rgba(255,255,255,0.95)' }}>
+                  My approach includes deliberate exposure to cognitive dissonance through international markets, 
+                  contrarian viewpoints, and interdisciplinary study. This intellectual portfolio diversification 
+                  enables pattern recognition across seemingly unrelated domains and drives breakthrough strategic insights.
                 </Typography>
-              </Box>
-
-              <Box sx={{ p: 3, border: 2, borderColor: 'secondary.main', borderRadius: 2 }}>
-                <Typography variant="h6" color="secondary" gutterBottom>
-                  Overcoming Adversity
-                </Typography>
-                <Typography variant="body1" sx={{ mb: 2 }}>
-                  <strong>Losing My Dad:</strong> I lost my father when I was 19, which really changed how I see life and relationships. 
-                  People tend to come to me when they're going through tough times - I think that experience taught me how to be there for others.
-                </Typography>
-                <Typography variant="body1">
-                  <strong>Coming Back from Injury:</strong> At 20, I fell off a roof and completely shattered my kneecap and ankle. 
-                  Spent 3 months flat on my back, but somehow managed to hike New Zealand's famous trails just 6 months later. 
-                  That whole experience taught me patience (which doesn't come naturally to me) and the power of setting long-term goals.
+                <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.9)', fontStyle: 'italic', fontSize: '0.95em' }}>
+                  "True innovation emerges at the intersection of deep domain expertise and cross-pollinated thinking."
                 </Typography>
               </Box>
 
-              <Box sx={{ p: 3, bgcolor: 'grey.100', borderRadius: 2 }}>
-                <Typography variant="h6" color="primary" gutterBottom>
-                  Core Values & Philosophy
+              <Box sx={{ p: 4, borderRadius: 3, border: '1px solid #0f766e', backgroundColor: '#f0fdfa' }}>
+                <Typography variant="h6" color="secondary" gutterBottom sx={{ fontWeight: 600 }}>
+                  Human-Centered Leadership Architecture
                 </Typography>
-                <Typography variant="body1" sx={{ mb: 1 }}>
-                  <strong>How I Lead:</strong> I'm pretty patient and humble by nature. I think you have to earn trust and respect - 
-                  it's not something that comes with a title. I genuinely care about the people I work with and try to be as transparent as possible.
+                <Typography variant="body1" sx={{ mb: 3 }}>
+                  Sustainable organizational transformation is fundamentally a human challenge requiring psychological 
+                  safety, authentic leadership presence, and systems thinking. My leadership philosophy is built on 
+                  three interconnected pillars that create multiplicative rather than additive value:
                 </Typography>
-                <Typography variant="body1" sx={{ mb: 1 }}>
-                  <strong>How I Learn:</strong> I'm a fast learner, but I learn best by jumping in and doing things. 
-                  I'm always bringing insights from consulting work and life experiences back to whatever I'm working on.
-                </Typography>
-                <Typography variant="body1">
-                  <strong>Work-Life Balance:</strong> I work hard, but I know my limits and make sure to carve out time 
-                  for family and the things that recharge me. My goal is pretty simple - be the happiest version of myself every day.
-                </Typography>
+                
+                <Box sx={{ mb: 2 }}>
+                  <Typography variant="body1" sx={{ mb: 1, fontWeight: 600 }}>
+                    🎯 Trust Architecture & Psychological Safety
+                  </Typography>
+                  <Typography variant="body1" sx={{ mb: 2, pl: 2 }}>
+                    Leadership credibility is earned through consistent micro-behaviors, radical transparency in decision-making, 
+                    and genuine investment in individual growth trajectories. I create environments where calculated risks 
+                    are rewarded and intelligent failures become learning accelerators.
+                  </Typography>
+                </Box>
+
+                <Box sx={{ mb: 2 }}>
+                  <Typography variant="body1" sx={{ mb: 1, fontWeight: 600 }}>
+                    💎 Antifragile Resilience & Growth Mindset
+                  </Typography>
+                  <Typography variant="body1" sx={{ mb: 2, pl: 2 }}>
+                    Having navigated significant personal and professional adversity, I understand that elite performance 
+                    emerges from embracing volatility as a growth catalyst. I develop organizational antibodies against 
+                    black swan events while maintaining optionality for asymmetric upside opportunities.
+                  </Typography>
+                </Box>
+
+                <Box>
+                  <Typography variant="body1" sx={{ mb: 1, fontWeight: 600 }}>
+                    ⚡ Sustainable High Performance & Systems Integration
+                  </Typography>
+                  <Typography variant="body1" sx={{ pl: 2 }}>
+                    Peak cognitive performance requires understanding energy management, circadian optimization, and 
+                    work-life integration rather than balance. I model sustainable intensity while maintaining the 
+                    strategic perspective necessary for long-term value creation.
+                  </Typography>
+                </Box>
               </Box>
             </Box>
           </TabPanel>
