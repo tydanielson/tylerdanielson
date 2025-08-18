@@ -6,7 +6,7 @@ terraform {
       version = "~> 5.0"
     }
   }
-  
+
   backend "s3" {
     bucket = "tydanielson-terraform-state-github"
     key    = "portfolio-website/terraform.tfstate"
@@ -16,7 +16,7 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
-  
+
   default_tags {
     tags = {
       Project     = "Portfolio Website"
