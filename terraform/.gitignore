@@ -3,7 +3,9 @@
 *.tfstate.*
 .terraform/
 .terraform.lock.hcl
-terraform.tfvars
+# terraform.tfvars - included for CI/CD
+*.auto.tfvars
+*secret*.tfvars
 
 # AWS
 .aws/
