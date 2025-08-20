@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Container, Typography, Box, Tab, Tabs, Paper, Link, Chip } from '@mui/material';
-import { Email, LinkedIn, GitHub, Work, School, Code, Build, Psychology, Speed, Person } from '@mui/icons-material';
+import { LinkedIn, GitHub, Work, School, Code, Build, Psychology, Speed, Person } from '@mui/icons-material';
 
 const theme = createTheme({
   palette: {
@@ -112,7 +112,6 @@ function App() {
             <Link href="https://github.com/tydanielson" target="_blank" rel="noopener">
               <Chip icon={<GitHub />} label="GitHub" clickable color="primary" />
             </Link>
-            <Chip icon={<Email />} label="Contact" clickable color="primary" />
           </Box>
         </Paper>
 
@@ -577,7 +576,14 @@ function App() {
                   <Build sx={{ mr: 1, verticalAlign: 'middle' }} />
                   Leadership & Management
                 </Typography>
-                <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', mb: 2 }}>
+                <Box sx={{ 
+                  display: 'flex', 
+                  gap: 1, 
+                  flexWrap: { xs: 'nowrap', md: 'wrap' },
+                  overflowX: { xs: 'auto', md: 'visible' },
+                  mb: 2,
+                  pb: { xs: 1, md: 0 }
+                }}>
                   <Chip label="Co-founder & CTO" color="primary" />
                   <Chip label="Executive Leadership (CEO/CTO)" color="primary" />
                   <Chip label="Team Management (50+ people)" color="primary" />
@@ -593,7 +599,14 @@ function App() {
                   <Psychology sx={{ mr: 1, verticalAlign: 'middle' }} />
                   AI & Machine Learning
                 </Typography>
-                <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', mb: 2 }}>
+                <Box sx={{ 
+                  display: 'flex', 
+                  gap: 1, 
+                  flexWrap: { xs: 'nowrap', md: 'wrap' },
+                  overflowX: { xs: 'auto', md: 'visible' },
+                  mb: 2,
+                  pb: { xs: 1, md: 0 }
+                }}>
                   <Chip label="AI Platform Architecture" color="secondary" />
                   <Chip label="Machine Learning Systems" color="secondary" />
                   <Chip label="AI Agent Development" color="secondary" />
@@ -608,7 +621,14 @@ function App() {
                   <Code sx={{ mr: 1, verticalAlign: 'middle' }} />
                   Software & Systems Architecture
                 </Typography>
-                <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', mb: 2 }}>
+                <Box sx={{ 
+                  display: 'flex', 
+                  gap: 1, 
+                  flexWrap: { xs: 'nowrap', md: 'wrap' },
+                  overflowX: { xs: 'auto', md: 'visible' },
+                  mb: 2,
+                  pb: { xs: 1, md: 0 }
+                }}>
                   <Chip label="AI Platform Architecture" color="secondary" variant="outlined" />
                   <Chip label="Enterprise Architecture" color="secondary" variant="outlined" />
                   <Chip label="Angular & Frontend" color="secondary" variant="outlined" />
@@ -624,7 +644,14 @@ function App() {
                   <Psychology sx={{ mr: 1, verticalAlign: 'middle' }} />
                   Business & Technology Integration
                 </Typography>
-                <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap', mb: 2 }}>
+                <Box sx={{ 
+                  display: 'flex', 
+                  gap: 1, 
+                  flexWrap: { xs: 'nowrap', md: 'wrap' },
+                  overflowX: { xs: 'auto', md: 'visible' },
+                  mb: 2,
+                  pb: { xs: 1, md: 0 }
+                }}>
                   <Chip label="AI-Powered Insurance Solutions" color="primary" />
                   <Chip label="Financial Services & Fintech" color="primary" />
                   <Chip label="Insurance Technology" color="primary" />
@@ -640,7 +667,13 @@ function App() {
                   <Speed sx={{ mr: 1, verticalAlign: 'middle' }} />
                   Core Technical Skills
                 </Typography>
-                <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
+                <Box sx={{ 
+                  display: 'flex', 
+                  gap: 1, 
+                  flexWrap: { xs: 'nowrap', md: 'wrap' },
+                  overflowX: { xs: 'auto', md: 'visible' },
+                  pb: { xs: 1, md: 0 }
+                }}>
                   <Chip label="AngularJS/Angular" color="secondary" />
                   <Chip label="AWS Cloud Services" color="secondary" />
                   <Chip label="Spring/Hibernate" color="secondary" />
