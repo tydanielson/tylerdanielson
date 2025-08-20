@@ -9,7 +9,7 @@ on:
 
 env:
   NODE_VERSION: '18'
-  TERRAFORM_VERSION: '1.5.0'
+  TERRAFORM_VERSION: '1.9.0'
   AWS_REGION: 'us-east-1'
 
 # Required for OIDC
