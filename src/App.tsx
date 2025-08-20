@@ -490,15 +490,20 @@ function App() {
                 boxShadow: '0 8px 32px rgba(30, 64, 175, 0.15)',
               }}>
                 <Typography variant="h5" sx={{ 
-                  background: 'linear-gradient(135deg, #ffffff 0%, #1e40af 70%, #93c5fd 100%)',
-                  WebkitBackgroundClip: 'text',
-                  WebkitTextFillColor: 'transparent',
+                  color: 'white',
                   fontWeight: 600, 
                   mb: 3 
                 }}>
                   🏆 Notable Achievements
                 </Typography>
-                <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 3 }}>
+                <Box sx={{ 
+                  display: 'grid', 
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+                  gap: 3,
+                  '@media (max-width: 600px)': {
+                    gridTemplateColumns: '1fr',
+                  }
+                }}>
                   <Box>
                     <Typography variant="h6" sx={{ 
                       color: 'white', 
@@ -596,34 +601,8 @@ function App() {
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 1, 
-                  flexWrap: 'nowrap',
-                  overflowX: 'auto',
-                  mb: 2,
-                  pb: 1,
-                  scrollbarWidth: 'thin',
-                  '@media (min-width: 900px)': {
-                    flexWrap: 'wrap',
-                    overflowX: 'visible',
-                    pb: 0,
-                  },
-                  '&::-webkit-scrollbar': {
-                    height: '6px',
-                  },
-                  '&::-webkit-scrollbar-track': {
-                    backgroundColor: 'rgba(0,0,0,0.1)',
-                    borderRadius: '3px',
-                  },
-                  '&::-webkit-scrollbar-thumb': {
-                    backgroundColor: 'rgba(30, 64, 175, 0.3)',
-                    borderRadius: '3px',
-                    '&:hover': {
-                      backgroundColor: 'rgba(30, 64, 175, 0.5)',
-                    },
-                  },
-                  '& .MuiChip-root': {
-                    flexShrink: 0,
-                    whiteSpace: 'nowrap',
-                  }
+                  flexWrap: 'wrap',
+                  mb: 2
                 }}>
                   <Chip label="Co-founder & CTO" color="primary" />
                   <Chip label="Executive Leadership (CEO/CTO)" color="primary" />
@@ -643,34 +622,8 @@ function App() {
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 1, 
-                  flexWrap: 'nowrap',
-                  overflowX: 'auto',
-                  mb: 2,
-                  pb: 1,
-                  scrollbarWidth: 'thin',
-                  '@media (min-width: 900px)': {
-                    flexWrap: 'wrap',
-                    overflowX: 'visible',
-                    pb: 0,
-                  },
-                  '&::-webkit-scrollbar': {
-                    height: '6px',
-                  },
-                  '&::-webkit-scrollbar-track': {
-                    backgroundColor: 'rgba(0,0,0,0.1)',
-                    borderRadius: '3px',
-                  },
-                  '&::-webkit-scrollbar-thumb': {
-                    backgroundColor: 'rgba(15, 118, 110, 0.3)',
-                    borderRadius: '3px',
-                    '&:hover': {
-                      backgroundColor: 'rgba(15, 118, 110, 0.5)',
-                    },
-                  },
-                  '& .MuiChip-root': {
-                    flexShrink: 0,
-                    whiteSpace: 'nowrap',
-                  }
+                  flexWrap: 'wrap',
+                  mb: 2
                 }}>
                   <Chip label="AI Platform Architecture" color="secondary" />
                   <Chip label="Machine Learning Systems" color="secondary" />
@@ -689,34 +642,8 @@ function App() {
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 1, 
-                  flexWrap: 'nowrap',
-                  overflowX: 'auto',
-                  mb: 2,
-                  pb: 1,
-                  scrollbarWidth: 'thin',
-                  '@media (min-width: 900px)': {
-                    flexWrap: 'wrap',
-                    overflowX: 'visible',
-                    pb: 0,
-                  },
-                  '&::-webkit-scrollbar': {
-                    height: '6px',
-                  },
-                  '&::-webkit-scrollbar-track': {
-                    backgroundColor: 'rgba(0,0,0,0.1)',
-                    borderRadius: '3px',
-                  },
-                  '&::-webkit-scrollbar-thumb': {
-                    backgroundColor: 'rgba(15, 118, 110, 0.3)',
-                    borderRadius: '3px',
-                    '&:hover': {
-                      backgroundColor: 'rgba(15, 118, 110, 0.5)',
-                    },
-                  },
-                  '& .MuiChip-root': {
-                    flexShrink: 0,
-                    whiteSpace: 'nowrap',
-                  }
+                  flexWrap: 'wrap',
+                  mb: 2
                 }}>
                   <Chip label="AI Platform Architecture" color="secondary" variant="outlined" />
                   <Chip label="Enterprise Architecture" color="secondary" variant="outlined" />
@@ -736,34 +663,8 @@ function App() {
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 1, 
-                  flexWrap: 'nowrap',
-                  overflowX: 'auto',
-                  mb: 2,
-                  pb: 1,
-                  scrollbarWidth: 'thin',
-                  '@media (min-width: 900px)': {
-                    flexWrap: 'wrap',
-                    overflowX: 'visible',
-                    pb: 0,
-                  },
-                  '&::-webkit-scrollbar': {
-                    height: '6px',
-                  },
-                  '&::-webkit-scrollbar-track': {
-                    backgroundColor: 'rgba(0,0,0,0.1)',
-                    borderRadius: '3px',
-                  },
-                  '&::-webkit-scrollbar-thumb': {
-                    backgroundColor: 'rgba(30, 64, 175, 0.3)',
-                    borderRadius: '3px',
-                    '&:hover': {
-                      backgroundColor: 'rgba(30, 64, 175, 0.5)',
-                    },
-                  },
-                  '& .MuiChip-root': {
-                    flexShrink: 0,
-                    whiteSpace: 'nowrap',
-                  }
+                  flexWrap: 'wrap',
+                  mb: 2
                 }}>
                   <Chip label="AI-Powered Insurance Solutions" color="primary" />
                   <Chip label="Financial Services & Fintech" color="primary" />
@@ -783,33 +684,7 @@ function App() {
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 1, 
-                  flexWrap: 'nowrap',
-                  overflowX: 'auto',
-                  pb: 1,
-                  scrollbarWidth: 'thin',
-                  '@media (min-width: 900px)': {
-                    flexWrap: 'wrap',
-                    overflowX: 'visible',
-                    pb: 0,
-                  },
-                  '&::-webkit-scrollbar': {
-                    height: '6px',
-                  },
-                  '&::-webkit-scrollbar-track': {
-                    backgroundColor: 'rgba(0,0,0,0.1)',
-                    borderRadius: '3px',
-                  },
-                  '&::-webkit-scrollbar-thumb': {
-                    backgroundColor: 'rgba(15, 118, 110, 0.3)',
-                    borderRadius: '3px',
-                    '&:hover': {
-                      backgroundColor: 'rgba(15, 118, 110, 0.5)',
-                    },
-                  },
-                  '& .MuiChip-root': {
-                    flexShrink: 0,
-                    whiteSpace: 'nowrap',
-                  }
+                  flexWrap: 'wrap'
                 }}>
                   <Chip label="AngularJS/Angular" color="secondary" />
                   <Chip label="AWS Cloud Services" color="secondary" />
