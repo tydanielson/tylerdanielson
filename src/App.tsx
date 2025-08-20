@@ -1,8 +1,8 @@
 import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import { Container, Typography, Box, Tab, Tabs, Paper, Link, Chip, Button } from '@mui/material';
-import { Email, LinkedIn, GitHub, Work, School, Code, Download, Build, Psychology, Speed, Person } from '@mui/icons-material';
+import { Container, Typography, Box, Tab, Tabs, Paper, Link, Chip } from '@mui/material';
+import { Email, LinkedIn, GitHub, Work, School, Code, Build, Psychology, Speed, Person } from '@mui/icons-material';
 
 const theme = createTheme({
   palette: {
@@ -113,17 +113,6 @@ function App() {
               <Chip icon={<GitHub />} label="GitHub" clickable color="primary" />
             </Link>
             <Chip icon={<Email />} label="Contact" clickable color="primary" />
-          </Box>
-          <Box sx={{ mt: 3, display: 'flex', justifyContent: 'center', gap: 2, flexWrap: 'wrap' }}>
-            <Button 
-              variant="outlined" 
-              startIcon={<Download />}
-              href="/Resume -- Tyler Danielson.docx"
-              download
-              size="small"
-            >
-              Download Resume
-            </Button>
           </Box>
         </Paper>
 
@@ -688,7 +677,7 @@ function App() {
               
               <Box sx={{ p: 3, border: 1, borderColor: 'divider', borderRadius: 2 }}>
                 <Typography variant="h6" color="primary">
-                  <Link href="https://www.danielsonsunglasses.com" target="_blank" rel="noopener">
+                  <Link href="https://danielsonsunglasses.com" target="_blank" rel="noopener">
                     Danielson Sunglasses ↗
                   </Link>
                 </Typography>
