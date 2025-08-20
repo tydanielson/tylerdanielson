@@ -125,7 +125,24 @@ function App() {
             backdropFilter: 'blur(10px)',
           }}
         >
-          <Tabs value={value} onChange={handleChange} centered>
+          <Tabs 
+            value={value} 
+            onChange={handleChange} 
+            centered
+            variant="scrollable"
+            scrollButtons="auto"
+            allowScrollButtonsMobile
+            sx={{
+              '& .MuiTabs-scroller': {
+                overflow: 'auto !important',
+              },
+              '@media (max-width: 600px)': {
+                '& .MuiTabs-centered': {
+                  justifyContent: 'flex-start',
+                },
+              },
+            }}
+          >
             <Tab label="About" icon={<Work />} />
             <Tab label="Education" icon={<School />} />
             <Tab label="Skills" icon={<Build />} />
@@ -579,10 +596,34 @@ function App() {
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 1, 
-                  flexWrap: { xs: 'nowrap', md: 'wrap' },
-                  overflowX: { xs: 'auto', md: 'visible' },
+                  flexWrap: 'nowrap',
+                  overflowX: 'auto',
                   mb: 2,
-                  pb: { xs: 1, md: 0 }
+                  pb: 1,
+                  scrollbarWidth: 'thin',
+                  '@media (min-width: 900px)': {
+                    flexWrap: 'wrap',
+                    overflowX: 'visible',
+                    pb: 0,
+                  },
+                  '&::-webkit-scrollbar': {
+                    height: '6px',
+                  },
+                  '&::-webkit-scrollbar-track': {
+                    backgroundColor: 'rgba(0,0,0,0.1)',
+                    borderRadius: '3px',
+                  },
+                  '&::-webkit-scrollbar-thumb': {
+                    backgroundColor: 'rgba(30, 64, 175, 0.3)',
+                    borderRadius: '3px',
+                    '&:hover': {
+                      backgroundColor: 'rgba(30, 64, 175, 0.5)',
+                    },
+                  },
+                  '& .MuiChip-root': {
+                    flexShrink: 0,
+                    whiteSpace: 'nowrap',
+                  }
                 }}>
                   <Chip label="Co-founder & CTO" color="primary" />
                   <Chip label="Executive Leadership (CEO/CTO)" color="primary" />
@@ -602,10 +643,34 @@ function App() {
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 1, 
-                  flexWrap: { xs: 'nowrap', md: 'wrap' },
-                  overflowX: { xs: 'auto', md: 'visible' },
+                  flexWrap: 'nowrap',
+                  overflowX: 'auto',
                   mb: 2,
-                  pb: { xs: 1, md: 0 }
+                  pb: 1,
+                  scrollbarWidth: 'thin',
+                  '@media (min-width: 900px)': {
+                    flexWrap: 'wrap',
+                    overflowX: 'visible',
+                    pb: 0,
+                  },
+                  '&::-webkit-scrollbar': {
+                    height: '6px',
+                  },
+                  '&::-webkit-scrollbar-track': {
+                    backgroundColor: 'rgba(0,0,0,0.1)',
+                    borderRadius: '3px',
+                  },
+                  '&::-webkit-scrollbar-thumb': {
+                    backgroundColor: 'rgba(15, 118, 110, 0.3)',
+                    borderRadius: '3px',
+                    '&:hover': {
+                      backgroundColor: 'rgba(15, 118, 110, 0.5)',
+                    },
+                  },
+                  '& .MuiChip-root': {
+                    flexShrink: 0,
+                    whiteSpace: 'nowrap',
+                  }
                 }}>
                   <Chip label="AI Platform Architecture" color="secondary" />
                   <Chip label="Machine Learning Systems" color="secondary" />
@@ -624,10 +689,34 @@ function App() {
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 1, 
-                  flexWrap: { xs: 'nowrap', md: 'wrap' },
-                  overflowX: { xs: 'auto', md: 'visible' },
+                  flexWrap: 'nowrap',
+                  overflowX: 'auto',
                   mb: 2,
-                  pb: { xs: 1, md: 0 }
+                  pb: 1,
+                  scrollbarWidth: 'thin',
+                  '@media (min-width: 900px)': {
+                    flexWrap: 'wrap',
+                    overflowX: 'visible',
+                    pb: 0,
+                  },
+                  '&::-webkit-scrollbar': {
+                    height: '6px',
+                  },
+                  '&::-webkit-scrollbar-track': {
+                    backgroundColor: 'rgba(0,0,0,0.1)',
+                    borderRadius: '3px',
+                  },
+                  '&::-webkit-scrollbar-thumb': {
+                    backgroundColor: 'rgba(15, 118, 110, 0.3)',
+                    borderRadius: '3px',
+                    '&:hover': {
+                      backgroundColor: 'rgba(15, 118, 110, 0.5)',
+                    },
+                  },
+                  '& .MuiChip-root': {
+                    flexShrink: 0,
+                    whiteSpace: 'nowrap',
+                  }
                 }}>
                   <Chip label="AI Platform Architecture" color="secondary" variant="outlined" />
                   <Chip label="Enterprise Architecture" color="secondary" variant="outlined" />
@@ -647,10 +736,34 @@ function App() {
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 1, 
-                  flexWrap: { xs: 'nowrap', md: 'wrap' },
-                  overflowX: { xs: 'auto', md: 'visible' },
+                  flexWrap: 'nowrap',
+                  overflowX: 'auto',
                   mb: 2,
-                  pb: { xs: 1, md: 0 }
+                  pb: 1,
+                  scrollbarWidth: 'thin',
+                  '@media (min-width: 900px)': {
+                    flexWrap: 'wrap',
+                    overflowX: 'visible',
+                    pb: 0,
+                  },
+                  '&::-webkit-scrollbar': {
+                    height: '6px',
+                  },
+                  '&::-webkit-scrollbar-track': {
+                    backgroundColor: 'rgba(0,0,0,0.1)',
+                    borderRadius: '3px',
+                  },
+                  '&::-webkit-scrollbar-thumb': {
+                    backgroundColor: 'rgba(30, 64, 175, 0.3)',
+                    borderRadius: '3px',
+                    '&:hover': {
+                      backgroundColor: 'rgba(30, 64, 175, 0.5)',
+                    },
+                  },
+                  '& .MuiChip-root': {
+                    flexShrink: 0,
+                    whiteSpace: 'nowrap',
+                  }
                 }}>
                   <Chip label="AI-Powered Insurance Solutions" color="primary" />
                   <Chip label="Financial Services & Fintech" color="primary" />
@@ -670,9 +783,33 @@ function App() {
                 <Box sx={{ 
                   display: 'flex', 
                   gap: 1, 
-                  flexWrap: { xs: 'nowrap', md: 'wrap' },
-                  overflowX: { xs: 'auto', md: 'visible' },
-                  pb: { xs: 1, md: 0 }
+                  flexWrap: 'nowrap',
+                  overflowX: 'auto',
+                  pb: 1,
+                  scrollbarWidth: 'thin',
+                  '@media (min-width: 900px)': {
+                    flexWrap: 'wrap',
+                    overflowX: 'visible',
+                    pb: 0,
+                  },
+                  '&::-webkit-scrollbar': {
+                    height: '6px',
+                  },
+                  '&::-webkit-scrollbar-track': {
+                    backgroundColor: 'rgba(0,0,0,0.1)',
+                    borderRadius: '3px',
+                  },
+                  '&::-webkit-scrollbar-thumb': {
+                    backgroundColor: 'rgba(15, 118, 110, 0.3)',
+                    borderRadius: '3px',
+                    '&:hover': {
+                      backgroundColor: 'rgba(15, 118, 110, 0.5)',
+                    },
+                  },
+                  '& .MuiChip-root': {
+                    flexShrink: 0,
+                    whiteSpace: 'nowrap',
+                  }
                 }}>
                   <Chip label="AngularJS/Angular" color="secondary" />
                   <Chip label="AWS Cloud Services" color="secondary" />
