@@ -289,7 +289,7 @@ function App() {
                 </Typography>
                 <Typography variant="body2" sx={{ mt: 1, fontStyle: 'italic', color: 'rgba(255,255,255,0.8)', position: 'relative', zIndex: 1 }}>
                   • Built entire life insurance company software infrastructure from scratch to best-in-class in under one year<br/>
-                  • Hired and managed technology teams of up to 50+ employees including executives<br/>
+                  • Hired and managed technology teams including executives<br/>
                   • Sold insurance company shell for $5M to maintain operations<br/>
                   • Navigated NYSE compliance issues and achieved successful shareholder approval
                 </Typography>
